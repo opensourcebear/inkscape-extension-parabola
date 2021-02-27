@@ -45,14 +45,17 @@ On the Corners tab of the Parabola settings you can mix and match which corners 
 ### Example Renders
 
 ####Triangle Shape with 3 corners active
+
 ![Triangle Render](examples/triangle_500.png)
 
 **NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
 
 ####Cross Shape with 4 corners active
+
 ![Cross Render](examples/cross_500.png)
 
 **NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
 
 ####Square Shape with 4 corners active
+
 ![Square Render](examples/square_500.png)
