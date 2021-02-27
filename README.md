@@ -49,14 +49,13 @@ On the Corners tab of the Parabola settings you can mix and match which corners 
 
 **Triangle Shape with 3 corners active**
 
-
 <img alt="Triangle Render" src="examples/triangle_500.png" width="300" height="300" />
 
 **NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
 
 **Triangle Shape with 1 corner active**
-<img alt="Triangle Render" src="examples/triangle_1_side.png" width="300" height="300" />
 
+<img alt="Triangle Render" src="examples/triangle_1_side.png" width="300" height="300" />
 
 **Cross Shape with 4 corners active**
 
