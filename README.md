@@ -11,8 +11,8 @@ To install parabola, place the following files in your Inkscape extensions folde
 
 You can find your Inkscape extensions folder listed at Edit > Preferences > System: User extensions.
 
-* [parabola.inx](https://github.com/opensourcebear/inkscape-extensions/tree/main/parabola/parabola.inx)
-* [parabola.py](https://github.com/opensourcebear/inkscape-extensions/tree/main/parabola/parabola.py)
+* [parabola.inx](https://github.com/opensourcebear/inkscape-extension-parabola/blob/main/parabola.inx)
+* [parabola.py](https://github.com/opensourcebear/inkscape-extension-parabola/blob/main/parabola.py)
 
 ## Parabola usage
 ### Starting the Parabola extension
