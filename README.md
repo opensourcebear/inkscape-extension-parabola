@@ -21,7 +21,7 @@ Parabola is accessed from the extensions menu.  Go to Extensions => Render => Pa
 
 If Parabola doesn't appear in the render list, check that you have installed both files listed above in the correct folder, and that Inkscape has been restarted.
 
-![Extensions Menu](support_images/extensions_menu.png)
+<img src="support_images/extensions_menu.png" height="400" width="400" alt="Extensions Menu" />
 
 ### Configuring your render
 Parabola will allow you to set the following options:
@@ -34,27 +34,29 @@ Parabola will allow you to set the following options:
 
 **Hint:** Turn on live preview and observe how the preview result will appear as you change settings to become more familiar with the options.
 
-![Main Options](support_images/basic_options.png)
+<img alt="Main Options" src="support_images/basic_options.png" width="250" height="255" />
 
 ### Corners
 On the Corners tab of the Parabola settings you can mix and match which corners are rendered. 
 
-![Main Options](support_images/corners.png)
+<img alt="Corner Options" src="support_images/corners.png" width="250" height="255" />
 
 ### Example Renders
 
 **Triangle Shape with 3 corners active**
 
-![Triangle Render](examples/triangle_500.png)
+
+<img alt="Triangle Render" src="examples/triangle_500.png" width="300" height="300" />
+
 
 **NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
 
 **Cross Shape with 4 corners active**
 
-![Cross Render](examples/cross_500.png)
+<img alt="Cross Render" src="examples/cross_500.png" width="300" height="300" />
 
 **NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
 
 **Square Shape with 4 corners active**
 
-![Square Render](examples/square_500.png)
+<img alt="Square Render" src="examples/square_500.png" width="300" height="300" />
