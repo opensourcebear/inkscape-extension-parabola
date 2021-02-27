@@ -4,7 +4,7 @@ Parabola is an Inkscape extension that renders a series of lines in selected sha
 
 [parabola on github](https://github.com/opensourcebear/inkscape-extensions/tree/main/parabola)
 
-**NOTE:** *Parabola was developed on a Macintosh running Inkscape version 1.0*
+**NOTE:** *Parabola was developed on a Macintosh running Inkscape version 1.0.  It has NOT been tested on any other platforms or Inkscape versions*
 
 
 ## How to install
