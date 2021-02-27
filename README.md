@@ -3,7 +3,11 @@
 Parabola is an [Inkscape](https://inkscape.org) extension that renders a series of lines in selected shapes to form an optical illusion of a curved line (Parabolic lines)
 
 
-**NOTE:** *Parabola was developed on a Macintosh running Inkscape version 1.0.  It has NOT been tested on any other platforms or Inkscape versions*
+**NOTE:** *Parabola was developed on a Macintosh and it has been tested on the following platforms:*
+
+* MacOS Big Sur + Inkscape 1.0 - *No issues found*
+* Ubuntu Linux + Inkscape 1.0 - *Live Preview may not work well*
+* Windows 10 + Inkscape 1.0.2 - *No issues found*
 
 
 ## How to install
@@ -48,8 +52,11 @@ On the Corners tab of the Parabola settings you can mix and match which corners 
 
 <img alt="Triangle Render" src="examples/triangle_500.png" width="300" height="300" />
 
-
 **NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
+
+**Triangle Shape with 1 corner active**
+<img alt="Triangle Render" src="examples/triangle_1_side.png" width="300" height="300" />
+
 
 **Cross Shape with 4 corners active**
 
@@ -60,3 +67,13 @@ On the Corners tab of the Parabola settings you can mix and match which corners 
 **Square Shape with 4 corners active**
 
 <img alt="Square Render" src="examples/square_500.png" width="300" height="300" />
+
+**Square Shape with 2 corners active**
+
+<img alt="Square Render - 2 corners" src="examples/square_2_sides.png" width="300" height="300" />
+
+**Hexagon Shape made from joining 6 triangle shapes**
+
+<img alt="Hexagon Example" src="examples/hexagon.png" width="300" height="300" />
+
+**NOTE:** Hexagon is not a shape produced by this plugin, but manually grouping shapes together can produce new shapes.  Renders are all black, The color seen here was added as a gradient stroke after rendering.
