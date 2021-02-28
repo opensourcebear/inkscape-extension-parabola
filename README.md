@@ -1,4 +1,4 @@
-# Parabola
+# Parabola v1.1.0
 
 Parabola is an [Inkscape](https://inkscape.org) extension that renders a series of lines in selected shapes to form an optical illusion of a curved line (Parabolic lines)
 
@@ -6,14 +6,14 @@ Parabola is an [Inkscape](https://inkscape.org) extension that renders a series 
 **NOTE:** *Parabola was developed on a Macintosh and it has been tested on the following platforms:*
 
 * MacOS Big Sur + Inkscape 1.0 - *No issues found*
-* Ubuntu Linux + Inkscape 1.0 - *Live Preview may not work well*
+* Ubuntu Linux + Inkscape 1.0.1 - *Live Preview experience has issues*
 * Windows 10 + Inkscape 1.0.2 - *No issues found*
 
 
 ## How to install
 To install parabola, place the following files in your Inkscape extensions folder and then restart Inkscape.
 
-You can find your Inkscape extensions folder listed at Edit > Preferences > System: User extensions.
+You can find your Inkscape extensions folder listed at Edit => Preferences => System: User extensions.
 
 * [parabola.inx](https://github.com/opensourcebear/inkscape-extension-parabola/blob/main/parabola.inx)
 * [parabola.py](https://github.com/opensourcebear/inkscape-extension-parabola/blob/main/parabola.py)
@@ -34,7 +34,8 @@ Parabola will allow you to set the following options:
 2. Shape Width - Overall width of the object (100 - 1000)
 3. Number of line segments (5 - 100)
 4. Shape - Cross, Square, or Triangle
-5. Border - a path that outlines the shape. At this time, not having the border may cause undesirable edges.
+
+*Versions prior to v1.1.0 included an option to enable/disable a border - a path that outlines the shape. This feature was removed and now a border is only drawn based on the corners chosen.*
 
 **Hint:** Turn on live preview and observe how the preview result will appear as you change settings to become more familiar with the options.
 

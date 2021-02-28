@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 #
+# 2/27/2021 - v.1.1.0
 # Copyright (C) 2021 Reginald Waters opensourcebear@nthebare.com
 #
 # This program is free software; you can redistribute it and/or modify
@@ -38,7 +39,6 @@ class parabola(inkex.GenerateExtension):
         pars.add_argument("--seg_count", type=int, default=10,
                           help="Number of line segments")
         pars.add_argument("--shape", default="square")
-        pars.add_argument("--border", default="false")
         pars.add_argument("--tab", default="common")
         pars.add_argument("--c1", default="true")
         pars.add_argument("--c2", default="false")
@@ -50,7 +50,6 @@ class parabola(inkex.GenerateExtension):
         ht = int(self.options.height)
         wt = int(self.options.width)
         sc = int(self.options.seg_count)
-        bd = self.options.border
         shape = self.options.shape
         c1 = self.options.c1
         c2 = self.options.c2
@@ -78,20 +77,28 @@ class parabola(inkex.GenerateExtension):
             # We draw the cross shape and store the 4 points
             # Can this be looped?
             # Should I store the coordinates in an array/list?
-            tur.forward((ht / 2)) # from center go forward (up) half the object height
-            toppoint = tur.getpos() # store the coordinates for the top most point
-            if bd == 'true':
+            tur.forward((ht / 2)) 
+            toppoint = tur.getpos() 
+            if c3 == 'true' or c4 == 'true':
                 tur.pd()
-            tur.backward((ht)) 
+            tur.backward((ht / 2)) 
             tur.pu()
+            if c1 == 'true' or c2 == 'true':
+                tur.pd()
+            tur.backward((ht / 2))
             bottompoint = tur.getpos()
+            tur.pu()
             tur.setpos(point)
             tur.right(90)
             tur.forward((wt / 2))
             rightpoint = tur.getpos()
-            if bd == 'true':
+            if c3 == 'true' or c2 == 'true':
                 tur.pd()
-            tur.backward((wt))
+            tur.backward((wt / 2))
+            tur.pu()
+            if c1 == 'true' or c4 == 'true':
+                tur.pd()
+            tur.backward((wt / 2))
             leftpoint = tur.getpos()
 
             while sc > 0:
@@ -130,12 +137,18 @@ class parabola(inkex.GenerateExtension):
             tur.right(90)
             tur.forward((wt /2))
             cornera = tur.getpos()
-            if bd == 'true':
+            if c3 == 'true' or c2 == 'true':
                 tur.pd()
             tur.backward((wt))
             cornerb = tur.getpos()
+            tur.pu()
+            if c2 == 'true' or c1 == 'true':
+                tur.pd()
             tur.setpos((point[0], (cornera[1] - ht) ))
             cornerc = tur.getpos()
+            tur.pu()
+            if c1 == 'true' or c3 == 'true':
+                tur.pd()            
             tur.setpos(cornera)
 
 # So..  The math below took a lot of trial and error to figure out...
@@ -171,18 +184,27 @@ class parabola(inkex.GenerateExtension):
             tur.right(90)
             tur.forward((ht / 2))
             swcorner = tur.getpos()
-            if bd == 'true':
+            if c4 == 'true' or c3 == 'true': # We only draw the 2 lines that are part of these corners
                 tur.pd()  # Pen Down
             tur.right(90)
             tur.forward(wt)
             secorner = tur.getpos()
+            tur.pu()
+            if c3 == 'true' or c2 == 'true': # We only draw the 2 lines that are part of these corners
+                tur.pd()
             tur.right(90)
             tur.forward(ht)
             necorner = tur.getpos()
+            tur.pu()
+            if c1 == 'true' or c2 == 'true': # We only draw the 2 lines that are part of these corners
+                tur.pd()
             tur.right(90)
             tur.forward(wt)
             nwcorner = tur.getpos()
             tur.right(90)
+            tur.pu()
+            if c4 == 'true' or c1 == 'true': # We only draw the 2 lines that are part of these corners
+                tur.pd()
             tur.forward(ht)
 
             while sc > 0:
