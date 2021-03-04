@@ -13,7 +13,10 @@ Parabola is an [Inkscape](https://inkscape.org) extension that renders a series 
 ## How to install
 To install parabola, place the following files in your Inkscape extensions folder and then restart Inkscape.
 
-You can find your Inkscape extensions folder listed at Edit => Preferences => System: User extensions.
+On **Linux** or **Windows** you can find your Inkscape extensions folder listed at Edit => Preferences => System: User extensions.
+
+On **MacOS** you can find your Inkscape extensions folder under Inkscape => Preferences => System: User extensions.
+
 
 * [parabola.inx](https://github.com/opensourcebear/inkscape-extension-parabola/blob/main/parabola.inx)
 * [parabola.py](https://github.com/opensourcebear/inkscape-extension-parabola/blob/main/parabola.py)
