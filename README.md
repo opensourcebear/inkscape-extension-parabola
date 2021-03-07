@@ -42,7 +42,7 @@ Parabola will allow you to set the following options:
 
 **Hint:** Turn on live preview and observe how the preview result will appear as you change settings to become more familiar with the options.
 
-<img alt="Main Options" src="support_images/basic_options.png" width="250" height="255" />
+<img alt="Main Options" src="support_images/basic_options_v1.1.0.png" width="250" height="255" />
 
 ### Corners
 On the Corners tab of the Parabola settings you can mix and match which corners are rendered. 
@@ -55,17 +55,13 @@ On the Corners tab of the Parabola settings you can mix and match which corners 
 
 <img alt="Triangle Render" src="examples/triangle_500.png" width="300" height="300" />
 
-**NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
-
-**Triangle Shape with 1 corner active**
-
-<img alt="Triangle Render" src="examples/triangle_1_side.png" width="300" height="300" />
+**NOTE:** Renders are all black, the color seen here was added as a gradient stroke after rendering.
 
 **Cross Shape with 4 corners active**
 
 <img alt="Cross Render" src="examples/cross_500.png" width="300" height="300" />
 
-**NOTE:** Renders are all black, The color seen here was added as a gradient stroke after rendering.
+**NOTE:** Renders are all black, the color seen here was added as a gradient stroke after rendering.
 
 **Square Shape with 4 corners active**
 
@@ -79,4 +75,10 @@ On the Corners tab of the Parabola settings you can mix and match which corners 
 
 <img alt="Hexagon Example" src="examples/hexagon.png" width="300" height="300" />
 
-**NOTE:** Hexagon is not a shape produced by this plugin, but manually grouping shapes together can produce new shapes.  Renders are all black, The color seen here was added as a gradient stroke after rendering.
+**NOTE:** Hexagon is not a shape produced by this plugin, but manually grouping shapes together can produce new shapes.  Renders are all black, the color seen here was added as a gradient stroke after rendering.
+
+**Multi-point Star**
+
+<img alt="Multi-point Star Example" src="examples/16points.png" width="300" height="300" />
+
+**NOTE:** This Multi-point star is not a shape produced by this plugin, but manually grouping shapes together can produce new shapes.  Renders are all black, the color seen here was added as a gradient stroke after rendering.
